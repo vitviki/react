@@ -189,12 +189,16 @@ h3 {
 .navbar--content {
     color: var(--darkblue);
     font-size: 20px;
-    transition: all ease-in-out 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar--content:hover {
     cursor: pointer;
     color: var(--github);
+}
+
+.navbar--active--content {
+    color: var(--primary);
 }
 
 /* ****************** HERO SECTION ********************* */
@@ -234,6 +238,10 @@ h3 {
     align-self: stretch;
 }
 
+.hero--section--title--a {
+    font-size: 24px;
+}
+
 .hero--section--title--color {
     color: var(--primary);
 }
@@ -257,11 +265,84 @@ h3 {
 
 
 /* ****************** SKILL SECTION ********************* */
+.skills--section {
+    display: flex;
+    flex-direction: column;
+    padding: 149.33px 85.33px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 106.667px;
+}
+
+.skills--section--heading {
+    color: var(--heading-color);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 77px;
+}
+
+.skills--section--container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: flex-start;    
+    gap: 42.6px;
+}
+
+.skills--section--card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    padding: 32px;
+    align-items: flex-start;
+    gap: 32px;
+    border-radius: 10.6px;
+    background-color: var(--bg-shade);
+    min-height: 250px;
+}
+
+.skills--section--card:hover {
+    border-bottom: 4px solid var(--primary);
+    color: var(--darkblue);
+}
+
+.skills--section--img {
+    display: flex;
+    padding: 13.3px;
+    justify-content: center;
+    align-items: center;
+    gap: 13.3px;
+    border-radius: 10.6px;
+    background-color: #FFF;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.skills--section--card--content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.skills--section--description {
+    color: var(--darkblue);
+    font-size: 21.3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
 
 /* ****************** ABOUT ME SECTION ********************* */
 
 /* ****************** PORTFOLIO SECTION ********************* */
-
+.portfolio--container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21.3px;
+}
 /* ****************** TESTIMONIAL SECTION ********************* */
 
 /* ****************** CONTACT ME SECTION ********************* */

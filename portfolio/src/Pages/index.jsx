@@ -1,10 +1,11 @@
 import HeroSection from "./HeroSection";
-import Navbar from "./Navbar";
+import Skills from "./Skills";
 
 const Home = () => {
   return (
     <>
-      <HeroSection />;
+      <HeroSection />
+      <Skills />
     </>
   );
 };

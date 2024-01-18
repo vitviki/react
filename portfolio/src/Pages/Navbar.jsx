@@ -81,6 +81,20 @@ const Navbar = () => {
               smooth={true}
               offest={-70}
               duration={500}
+              to="skills-section"
+              onClick={closeMenu}
+              className="navbar--content"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="navbar--active--content"
+              spy={true}
+              smooth={true}
+              offest={-70}
+              duration={500}
               to="portfolio-section"
               onClick={closeMenu}
               className="navbar--content"
