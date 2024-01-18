@@ -189,7 +189,7 @@ h3 {
 .navbar--content {
     color: var(--darkblue);
     font-size: 20px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .navbar--content:hover {
@@ -368,6 +368,15 @@ h3 {
     align-items: flex-start;
     gap: 21.3px;
 }
+
+.portfolio--section--heading {
+    color: var(--heading-color);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 77px;
+    margin-bottom: 40px;
+}
+
 
 .portfolio--section--container {
     display: flex;
