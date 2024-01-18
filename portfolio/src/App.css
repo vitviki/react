@@ -348,12 +348,84 @@ h3 {
 
 
 /* ****************** PORTFOLIO SECTION ********************* */
+.portfolio--section {
+    display: flex;
+    flex-direction: column;
+    padding: 112px 85.33px;
+    align-items: flex-start;
+}
+
+.portfolio--container--box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .portfolio--container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 21.3px;
 }
+
+.portfolio--section--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 42.6px
+}
+
+.portfolio--section--card {
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    background-color: #FFF;
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.portfolio--section--img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.portfolio--section--img > img {
+    width: 100%;
+}
+
+.portfolio--section--card--content {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.porfolio--section--title {
+    color: var(--heading-color);
+}
+
+.portfolio--link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    border-bottom: 1.33px solid var(--primary);
+    padding-bottom: 10.6px;
+    font-weight: 600;
+}
+
+.portfolio--section--card:hover path {
+    stroke: #006B6A;
+}
+
 /* ****************** TESTIMONIAL SECTION ********************* */
 
 /* ****************** CONTACT ME SECTION ********************* */
