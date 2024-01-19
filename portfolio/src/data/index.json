@@ -47,5 +47,31 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique.",
             "link": "Live Website"
         }
+    ],
+    "testimonials" : [
+        {
+            "id": "1",
+            "count": "5",
+            "source": "/img/avatar-image.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique.",
+            "author_name": "Vishal Tyagi",
+            "author_designation": "Starbucks"
+        },
+        {
+            "id": "2",
+            "count": "5",
+            "source": "/img/avatar-image-1.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique.",
+            "author_name": "Robin Mukherjee",
+            "author_designation": "Louis Vuitton"
+        },
+        {
+            "id": "3",
+            "count": "5",
+            "source": "/img/avatar-image-2.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique.",
+            "author_name": "Dhani Prasad",
+            "author_designation": "McDonald's"
+        }
     ]
 }
