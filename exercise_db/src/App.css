@@ -61,8 +61,28 @@ body {
     margin-top: -330px;
 }
 
+.search-btn:hover {
+    color: #FF2625 !important;
+    border: 1px solid #FF2625 !important;
+}
+
+.bodyPart-card {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+}
+
+.bodyPart-card:hover {
+    transform: scale(1.1, 1.1);
+}
+
 @media screen and (max-width: 1200px) {
     .hero-banner-img {
         display: none;
     }
+
+    .left-arrow,
+    .right-arrow {
+        position: static !important;
+    }
 }
+
