@@ -4,8 +4,8 @@ import { Box } from "@mui/material";
 
 import Navbar from "./pages/Navbar";
 import Home from "./pages/Home";
-import ExerciseDetail from "./components/ExerciseDetail";
 import Footer from "./components/Footer";
+import ExerciseDetail from "./pages/ExerciseDetail";
 
 const App = () => {
   return (

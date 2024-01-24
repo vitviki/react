@@ -92,6 +92,20 @@ body {
     transform: scale(1.1, 1.1);
 }
 
+.exercise-video {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 387px;
+    height: 381px;
+    text-decoration: none;
+}
+
+.exercise-video:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.4s all ease-in-out;
+}
+
 @media screen and (max-width: 1200px) {
     .hero-banner-img {
         display: none;
@@ -104,6 +118,15 @@ body {
 
     .exercise-card {
         width: 320px;
+    }
+
+    .react-horizontal-scrolling-menu--scroll-container {
+        width: 500px;
+    }
+
+    .exercise-video {
+        width: 320px;
+        height: 300px;
     }
 }
 
