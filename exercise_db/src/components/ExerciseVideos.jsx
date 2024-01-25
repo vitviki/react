@@ -27,7 +27,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
         flexWrap="wrap"
         alignItems="center"
       >
-        {exerciseVideos?.slice(0, 3)?.map((item, idx) => {
+        {exerciseVideos?.slice(0, 6)?.map((item, idx) => {
           return (
             <a
               key={idx}
