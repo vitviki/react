@@ -49,6 +49,7 @@ body {
     margin-top: 29px;
     display: flex;
     justify-content: center;
+    height: 224px;
 }
 
 .weather-temp {
@@ -84,9 +85,15 @@ body {
 }
 
 .icon {
-    margin-top: 10px;
+    margin-top: -5px;
+    width: 71px;
+    height: 71px;
 }
 
 .text {
     font-size: 20px;
+}
+
+span {
+    font-size: 18px;
 }
