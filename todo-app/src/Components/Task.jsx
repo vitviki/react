@@ -5,21 +5,29 @@ import {
   faCircleCheck,
 } from "@fortawesome/free-regular-svg-icons";
 
-const Task = ({ task, finished }) => {
+const Task = ({ task, toggleComplete, removeTask }) => {
   return (
     <div className="task">
       <div className="task-left">
         <FontAwesomeIcon
-          icon={finished ? faCircleCheck : faCircle}
-          style={{ color: finished ? "#D98326" : "#241f31" }}
+          icon={task.completed ? faCircleCheck : faCircle}
+          style={{ color: task.completed ? "#D98326" : "#241f31" }}
           className="icon"
+          onClick={() => {
+            toggleComplete(task.id);
+          }}
         />
-        <p className={`${finished ? "task-finished" : ""}`}>{task}</p>
+        <p className={`${task.completed ? "task-finished" : ""}`}>
+          {task.task}
+        </p>
       </div>
       <FontAwesomeIcon
         icon={faTrashCan}
         style={{ color: "#D98326" }}
-        className="trash-icon"
+        className="icon"
+        onClick={() => {
+          removeTask(task.id);
+        }}
       />
     </div>
   );
