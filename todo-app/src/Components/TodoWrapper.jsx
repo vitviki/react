@@ -5,16 +5,16 @@ const TodoWrapper = ({ tasks }) => {
   return (
     <div className="todo-wrapper">
       <div className="todos">
-        <Task task={"Task Number 1"} />
-        <Task task={"Task Number 2"} />
-        <Task task={"Task Number 3"} />
-        <Task task={"Task Number 4"} />
-        <Task task={"Task Number 5"} />
-        <Task task={"Task Number 6"} />
-        <Task task={"Task Number 7"} />
-        <Task task={"Task Number 8"} />
-        <Task task={"Task Number 9"} />
-        <Task task={"Task Number 10"} />
+        <Task task={"Task Number 1"} finished={true} />
+        <Task task={"Task Number 2"} finished={false} />
+        <Task task={"Task Number 3"} finished={false} />
+        <Task task={"Task Number 4"} finished={false} />
+        <Task task={"Task Number 5"} finished={true} />
+        <Task task={"Task Number 6"} finished={false} />
+        <Task task={"Task Number 7"} finished={false} />
+        <Task task={"Task Number 8"} finished={false} />
+        <Task task={"Task Number 9"} finished={false} />
+        <Task task={"Task Number 10"} finished={false} />
         {/* {tasks.map((task, idx) => {
         <Task task={task} key={idx} />;
       })} */}

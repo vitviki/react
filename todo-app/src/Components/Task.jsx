@@ -1,17 +1,20 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle } from "@fortawesome/free-regular-svg-icons";
-import { faTrashCan } from "@fortawesome/free-regular-svg-icons";
+import {
+  faCircle,
+  faTrashCan,
+  faCircleCheck,
+} from "@fortawesome/free-regular-svg-icons";
 
-const Task = ({ task }) => {
+const Task = ({ task, finished }) => {
   return (
     <div className="task">
       <div className="task-left">
         <FontAwesomeIcon
-          icon={faCircle}
-          style={{ color: "#241f31" }}
+          icon={finished ? faCircleCheck : faCircle}
+          style={{ color: finished ? "#D98326" : "#241f31" }}
           className="icon"
         />
-        <p>{task}</p>
+        <p className={`${finished ? "task-finished" : ""}`}>{task}</p>
       </div>
       <FontAwesomeIcon
         icon={faTrashCan}

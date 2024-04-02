@@ -127,3 +127,8 @@ input::placeholder {
 .trash-icon {
   font-size: 1.2rem
 }
+
+.task-finished {
+  text-decoration:line-through;
+  color: #C2C2C2;
+}
