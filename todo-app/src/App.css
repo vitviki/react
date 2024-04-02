@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #FFFFFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #F1ECE6;
+  width: 100%;
+  height: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 70px;
+  color: #969696;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 > span {
+  color: #D98326;
+}
+
+.tab {
+  display: flex;
+  background:  #F3F3F3;
+}
+
+.tab-section {
+  width: 960px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #969696;
+  font-weight: 600;
+  cursor:pointer;
+}
+
+.tab-selected {
+  color: #323232;
+  border-bottom: 5px solid #D98326;
+}
+
+.add-task {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  max-width: 1040px;
+  width: 1040px;
+  padding: 15px 35px;
+  background: #F1ECE6;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+input::placeholder {
+  color: #969696;
+}
+
+.add-btn {
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  font-size: 1.85rem;
+  margin-left: -50px;
+  padding: 8px 20px;
+  border: none;
+  background: #76B7CD;
+  color: #F3F3F3;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.todo-wrapper {
+  width: 1040px;
+  max-width: 1040px;
+  height: 589px;
+  max-height: 589px;
+  margin: auto;
+  background: #F1ECE6;
+  border-radius: 50px;
+  padding: 50px;
+}
+
+.todos {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 30px 10px;
+  border-bottom: 1px solid #76B7CD;
+}
+
+.task:last-of-type {
+  border: none;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.trash-icon {
+  font-size: 1.2rem
 }
