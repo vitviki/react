@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    border: 1px solid black;
+    width: 600px;
+    margin-top: 200px;
+    background: #FFF;
+    padding-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text {
+    color: #3C009D;
+    font-size: 48px;
+    font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.underline {
+    background: #3C009D;
+    width: 61px;
+    height: 6px;
+    border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.inputs {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background-color: #EAEAEA;
+}
+
+.input img {
+    margin: 0 30px;
+}
+
+.input input {
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 19px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 30px;
+    margin: 30px auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: #FFF;
+    background: #4C00B4;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.forgot-password {
+    padding-left: 200px;
+    margin-top: 27px;
+    color: #797979;
+    font-size: 18px;
+}
+
+.forgot-password span {
+    cursor: pointer;
+    color: #4C00B4;
 }
