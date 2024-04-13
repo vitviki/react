@@ -5,7 +5,7 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="bg-white p-5 sticky top-0">
+    <div className="p-5 sticky top-0 ">
       <div className="max-w-[1240px] py-[18px] mx-auto flex justify-between items-center">
         <div className="text-3xl font-bold">FreshBooks</div>
         {toggle ? (
