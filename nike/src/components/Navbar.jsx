@@ -2,6 +2,7 @@ import { useState } from "react";
 import { headerLogo3 } from "../assets/images";
 import { hamburger, cross } from "../assets/icons";
 import { navLinks } from "../constants";
+import Button from "./Button";
 
 const Navbar = () => {
   const [toggleIcon, setToggleIcon] = useState(hamburger);
@@ -11,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="padding-x py-8 absolute w-full bg-white">
+    <header className="padding-x py-8 sticky top-0 z-20 w-full bg-white">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img src={headerLogo3} alt="Logo" width={130} height={29} />
@@ -28,9 +29,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="flex gap-2 leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
-          <a href="/">Sign up</a> <span>/</span> <a href="/">Sign in</a>
-        </div>
+        <Button label="Sign up / Sign in" />
         <div className="hidden max-lg:block">
           <img
             src={toggleIcon}
