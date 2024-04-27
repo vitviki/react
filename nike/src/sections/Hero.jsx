@@ -9,10 +9,7 @@ const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
   return (
-    <section
-      className="w-full flex xl:flex-row flex-col justify-center h-dvh gap-10 max-container p-2"
-      id="home"
-    >
+    <section className="w-full flex xl:flex-row flex-col justify-center h-dvh gap-10 max-container p-2">
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start min-h-screen gap-10 max-container p-2">
         <p className="text-xl font-montserrat text-coral-red">
           Our Summer Collections
