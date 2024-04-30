@@ -6,7 +6,7 @@ const SiderbarLink = ({ label, icon, path }) => {
   return (
     <Link
       to={path}
-      className={`flex items-center gap-2 font-light py-2 px-2 hover:bg-neutral-700 active:bg-neutral-700 rounded-sm text-xl
+      className={`flex items-center gap-2 font-light py-2 px-2 hover:bg-neutral-700 active:bg-neutral-700 rounded-xl text-xl
       ${
         path === pathname
           ? "bg-neutral-700 font-semibold text-white"

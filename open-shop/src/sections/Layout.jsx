@@ -6,8 +6,10 @@ const Layout = () => {
   return (
     <div className="h-screen w-screen flex flex-row bg-neutral-100 overflow-hidden">
       <Sidebar />
-      {/* <Header />
-      <Outlet /> */}
+      <div className="flex-1">
+        <Header />
+        <Outlet />
+      </div>
     </div>
   );
 };

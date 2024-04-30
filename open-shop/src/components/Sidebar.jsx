@@ -43,7 +43,7 @@ const Sidebar = () => {
           <span className="text-2xl">
             <FaSignOutAlt />
           </span>
-          <span className=" font-palanquin">Log out</span>
+          <span className=" font-palanquin">Log Out</span>
         </Link>
       </div>
     </div>
