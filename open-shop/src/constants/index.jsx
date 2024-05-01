@@ -172,11 +172,11 @@ export const TRANSACTIONS = [
 export const USER_PROFILES = [
   {
     name: "Male",
-    value: 540,
+    value: 250,
   },
   {
     name: "Female",
-    value: 620,
+    value: 540,
   },
   {
     name: "Other",
