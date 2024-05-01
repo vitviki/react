@@ -7,7 +7,7 @@ import TopStatsGrid from "./TopStatsGrid";
 
 const Dashboard = () => {
   return (
-    <div className="px-2 py-5 flex flex-col gap-4">
+    <div className="px-2 py-2 flex flex-col gap-4">
       <TopStatsGrid />
       <div className=" flex gap-4 w-full">
         <TransactionChart />

@@ -4,7 +4,7 @@ const StatsCard = ({ label, path, icon, figures, addons, bgColor }) => {
   return (
     <Link
       to={path}
-      className="flex items-center flex-1 bg-white p-3 hover:scale-105 duration-300 gap-4 rounded-xl shadow-lg"
+      className="flex items-center flex-1 bg-white p-3 gap-4 rounded-xl shadow-lg"
     >
       <div
         className={`flex justify-center items-center text-2xl ${bgColor} text-white p-3 rounded-full`}

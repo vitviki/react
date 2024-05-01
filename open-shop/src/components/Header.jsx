@@ -5,7 +5,7 @@ import { Fragment } from "react";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center h-20 bg-white border-b-4 border-gray-200 shadow-lg pl-4 pr-6">
+    <div className="flex justify-between items-center h-20 bg-white border-b-2 border-gray-200 shadow-sm pl-4 pr-6">
       <div className="relative">
         <BsSearch
           fontSize={20}
